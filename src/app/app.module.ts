@@ -23,6 +23,7 @@ import { DiseaseService } from './disease.service';
 const routes : Routes = [
   {path: '' , component:  HomeComponent},
   {path: 'disease/:id' , component:  DiseaseComponent},
+  {path: 'healthtip' , component:  HomeComponent},
   // {path: 'ayurveda', component: }
 ]
 

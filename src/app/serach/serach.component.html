@@ -1,0 +1,11 @@
+<div class="search">
+    <div class="search-icon">
+        <input *ngIf="showhideIcon" (keyup)="searchDisease()"  type="text" name="search"  [(ngModel)]="search" value="search" class="input-search" placeholder="search" />
+        <i class="fa fa-search" (click)="showhideBox()"></i>
+    </div>
+    <ul *ngIf="search">
+        <li *ngFor="let disease of searchdisease" (click)="clearfilter()" >
+            <a [routerLink]="['/disease', disease['id']]">{{disease['title']}}</a>
+        </li>
+    </ul>
+</div>

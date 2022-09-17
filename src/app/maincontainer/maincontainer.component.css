@@ -1,0 +1,50 @@
+img{ 
+    width: 100%;
+}
+.container1{
+    background-image: url("../../assets/images/a1.jpeg" ) ;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    /* height: 600px; */
+    opacity: 85%;
+    /* background-color: #000; */
+    font-family: "EB Garamond script=latin rev=1";
+}
+
+.container1 img{
+    width: 50%;
+    margin: auto 25%;
+    /* background: #FFF; */
+    /* opacity: 0.5; */
+}
+h1{
+    color: white;
+    font-size: 70px;
+    text-align: center;
+
+}
+
+button{
+    /* width:20%; */
+    /* border-radius:30px ; */
+    /* padding: 10px ;
+    margin-left: 40%;
+    margin-right: 50%; */
+    /* align-items: center; */
+    /* background-color: #2d1504eb; */
+    /* color: white;
+    width: 20%; */
+    /* margin: auto 46%; */
+    /* position: absolute; */
+    /* left: 40%; */
+
+}
+/* button:hover{ */
+    /* color: yellow; */
+    /* color: white; */
+    /* background-color: #2d1504c2;  */
+/* }  */
+
+.maincontainer{
+    display: inline-block;
+}

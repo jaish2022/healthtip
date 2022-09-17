@@ -1,0 +1,10 @@
+.container{
+    height: 100px;
+    background-color: #e4dddd;
+    width: 100%;
+    
+}
+.footer{
+    margin: 20px;
+    padding: 20px;
+}

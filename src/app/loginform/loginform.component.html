@@ -1,0 +1,35 @@
+<div class="logincontainer">
+    <form *ngIf = "showLoginForm" [formGroup]='login' (ngSubmit)="onsubmit()">
+        <div class="form-group">
+            <h2>WELCOME</h2>
+            <label for="email">Email Address </label>
+            <input type="email" name="email" class="form-control" id="email" formControlName="email"
+            [ngClass]="{'text-danger' : email?.invalid === true}">
+            <span *ngIf="(email?.touched || isFormSubmitted) && email?.errors?.['required']">
+                Email can not be blank
+            </span>
+        </div>
+        <span *ngIf="isFormSubmitted && email?.invalid" class="text-danger"></span>
+        <!-- <span class="tested">test = {{ email | json }}</span> -->
+
+        <span *ngIf="(email?.touched || isFormSubmitted) &&email?.errors?.['pattern']">Email is invalid.please type a valid address</span>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Password </label>
+            <input type="password" class="form-control" formControlName="password" name="password"
+                id="exampleInputPassword1">
+            <span *ngIf="(isFormSubmitted || password?.touched) && password?.invalid" class="text-danger"></span>
+            <span *ngIf="(isFormSubmitted || password?.touched) && password ?.errors?.['required']"> password is invalid</span>
+            <span *ngIf="(isFormSubmitted || password?.touched) && password?. errors?.['minlength']">password can not match</span>
+        </div>
+        <p class="forget-pass">forgetpassword</p>
+
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary" (click)="onsubmit" >Login</button><br><br>
+            <button type="button" (click)="showHideForm()" class="btn btn-primary">Cancel</button>
+        </div>
+
+        <!-- </div> -->
+    </form>
+    <button *ngIf="!showLoginForm" (click)="showHideForm()" class="btn btn-primary" >Login</button>
+
+</div>

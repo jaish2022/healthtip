@@ -1,0 +1,19 @@
+<div *ngIf = "lists.length>0; else NoDataComponent" class= "container2">
+   <div class="head-bx">
+      <h2>Top 6  Common Illnesses
+      </h2>
+   </div>
+   <div class="row" >
+      <div  *ngFor="let list of lists" class="col-md-3 col-sm-6 common-disease" routerLinkActive="active"  routerLink="/disease/{{list['id']}}">
+         <h4>{{list['title']}}</h4>
+         <img [src]="list ['img']" alt="Fever" >
+      </div>
+   </div>
+</div>
+<ng-template #NoDataComponent>
+   <div class= "container2">
+         Nothing to display
+   </div>
+</ng-template>
+ 
+     

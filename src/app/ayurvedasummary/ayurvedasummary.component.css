@@ -1,0 +1,36 @@
+.container{
+    /* height: 600px; */
+    width: 100%;
+    background-color: #e4dddd;
+    /* background-image: url("../../assets/images/Kama_InternalImage3_March_18-Effective-Ayurvedic-Face-Packs-to-Treat-Your-Skin_600x600px-Recovered.jpeg"); */
+    background-repeat: no-repeat;
+
+}
+.discr{
+    margin-top: 25px;
+    padding: 45px;
+    font-size: 15px;
+    text-align:justify ;
+}
+.ayur{
+    display: flex;
+}
+.col-flute{
+    /* padding: 15px ; */
+    margin: 37px;
+    transform: scale(1.05);
+    transition: all 2s ease;
+    /* font-size: 15px; */
+}
+h2{
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+/* p{
+    width: 50%;
+    float: right;
+    font-family:unset;
+    font-size:15px;
+    
+} */

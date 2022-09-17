@@ -1,0 +1,24 @@
+.logo{
+    /* width: 30px; */
+    /* width: 200px;
+     */
+     display: inline-block;
+     width: 13%;
+    position: relative;
+    float:  left;
+    z-index: 1;
+
+  }
+  .logo img{
+    /* width: 50%; */
+    /* margin-top: 10px; */
+    /* height: 40px; */
+    /* width: 50px; */
+    width: 100%;
+    /* margin-bottom: 40px; */
+    
+  } 
+   /* .navbar-brand{ 
+       margin-bottom: 30px; 
+     
+  }  */

@@ -1,0 +1,72 @@
+.navbar-brand {
+    letter-spacing: 3px;
+    color: #c24244;
+  }
+  
+  .navbar-brand:hover {
+      color: #c24244;
+  }
+  
+  .navbar-scroll .nav-link,
+  .navbar-scroll .fa-bars {
+    /* color: #7f4722; */
+    color: #d79c61;
+    text-decoration: none;
+  }
+  .navbar-scroll .nav-link:hover{
+    color: #d79c61;
+    font-weight: 600;
+  }
+  .navbar-scrolled .nav-link,
+  .navbar-scrolled .fa-bars {
+    /* color: #7f4722; */
+    text-align: center;
+  }
+  
+  .navbar-scrolled {
+    /* background-color: #ffede7; */
+    /* background-color: #2d1504eb; */
+  }
+  .navbar-nav{
+      flex: center;
+      justify-content: center;
+      align-items: center; 
+      text-align: center; 
+      list-style: none;
+      width: 100%;
+    }
+.nav-item a{
+    background-color: transparent;
+    /* padding: 0px 48px; */
+    line-height: 38px;
+}
+.collapse-navbar-collapse{
+    text-align: center;
+    padding:   0px;
+}
+
+@media (min-width: 768px){
+.navbar-nav {
+    /* float: none; */
+    padding:  27px 0px;
+    }
+}
+
+.navbar{
+  margin-bottom:0px ;
+  display: inline-block;
+     width: 70%;
+}
+
+.navbar-scroll{
+  /* background-color: rgb(83 101 0); */
+  background-color: #FFF;
+  border-radius: 0px;
+
+}
+.container{
+  width: 1020px;
+}
+.nav-item{
+  width: 16%;
+}

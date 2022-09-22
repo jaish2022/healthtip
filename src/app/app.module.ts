@@ -19,12 +19,20 @@ import { HomeComponent } from './home/home.component';
 import { Routes, RouterModule } from '@angular/router';
 import { DiseaseComponent } from './disease/disease.component';
 import { DiseaseService } from './disease.service';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 const routes : Routes = [
   {path: '' , component:  HomeComponent},
   {path: 'disease/:id' , component:  DiseaseComponent},
   {path: 'healthtip' , component:  HomeComponent},
   // {path: 'ayurveda', component: }
+
+  //Wild Card Route for 404 request
+  { 
+    path: '**',
+    pathMatch: 'full',
+    component: PagenotfoundComponent
+  },
 ]
 
 
@@ -42,6 +50,7 @@ const routes : Routes = [
     AyurvedasummaryComponent,
     HomeComponent,
     DiseaseComponent,
+    PagenotfoundComponent,
     
   ],
   imports: [
